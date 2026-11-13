@@ -1,0 +1,24 @@
+pkgbase = plasma-theme-vigil
+	pkgdesc = Minimal animated ASCII/TUI alien-Daedric suite for KDE Plasma 6 by splicer scorn (voidrane)
+	pkgver = 1.0
+	pkgrel = 1
+	url = https://github.com/numbpill3d/vigil
+	arch = any
+	license = GPL-3.0-or-later
+	depends = plasma-workspace
+	optdepends = sddm: SDDM login theme
+	optdepends = plymouth: Plymouth boot splash
+	source = plasma-theme-vigil-1.0.tar.gz::https://github.com/numbpill3d/vigil/archive/refs/tags/v1.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = plasma-theme-vigil
+
+pkgname = sddm-theme-vigil
+	pkgdesc = SDDM login theme — animated ASCII/TUI alien-Daedric suite
+	depends = sddm
+	optdepends = plasma-theme-vigil: the Plasma 6 half of the suite
+
+pkgname = plymouth-theme-vigil
+	pkgdesc = Plymouth boot splash — animated ASCII/TUI alien-Daedric suite
+	depends = plymouth
+	optdepends = plasma-theme-vigil: the Plasma 6 half of the suite
